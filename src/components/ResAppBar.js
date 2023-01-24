@@ -71,7 +71,7 @@ const ResAppBar = () => {
   
 
   return (
-    <AppBar position="fixed" style={{ background: '#6a5acd' }}>
+    <AppBar position="fixed" style={{ background: '#000080' }}>
       <Container maxWidth="lg">
         <Toolbar disableGutters>
           <Typography
@@ -89,7 +89,7 @@ const ResAppBar = () => {
               textDecoration: 'none',
             }}
           >
-            MyForum
+            CryptoClaims
           </Typography>
        
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'flex' } }}>
@@ -159,7 +159,7 @@ const ResAppBar = () => {
               textDecoration: 'none',
             }}
           >
-            MyForum
+            CryptoClaims
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
            

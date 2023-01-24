@@ -15,7 +15,7 @@ class Profile(models.Model):
         return f'{self.user} profile'
 
 class Thread(models.Model):
-    TOPIC_CHOICES = (
+    MARKET_CHOICES = (
     ("1", "Entertainment"),
     ("2", "Sports"),
     ("3", "Gaming"),
@@ -28,7 +28,7 @@ class Thread(models.Model):
     subject = models.CharField(max_length=128)
     content = models.TextField()
     creator = models.ForeignKey('User', on_delete=models.CASCADE, related_name='creator_threads')
-    topic = models.CharField(max_length=32, choices=TOPIC_CHOICES, default=1)
+    topic = models.CharField(max_length=32, choices=MARKET_CHOICES, default=1)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
     replyCount = models.IntegerField(default=0)
