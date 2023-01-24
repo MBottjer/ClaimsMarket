@@ -1,5 +1,15 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
+from jsonfield import JSONField
+
+# class Market(models.Model):
+#     market_name = models.CharField(max_length=32, default='FTX')
+#
+# class Claim(models.Model):
+#     account_balance = models.FloatField(default=0)
+#     account_assets = JSONField()
+#     market =  models.OneToOneField(Market, on_delete=models.CASCADE)
+#     creator = models.ForeignKey('User', on_delete=models.CASCADE, related_name='creator_claims')
 
 class User(AbstractUser):
     pass
